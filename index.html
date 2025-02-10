@@ -7,60 +7,72 @@
     <title> Portfolio Website | Artsy</title>
     <link rel="stylesheet" href="stylesheet.css">
     <!-- Boxicons -->
-     
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
    
     <div class="profile-page" id="profile-page">
         <header>
+            <button class="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </button>
             <nav>
                 <ul>
                     <li><a href="#profile-page" class="nav-link active">Profile</a></li>
-                    <li><a href="#work-experience" class="nav-link">Work Experience</a></li>
+                    <li><a href="#work-experience" class="nav-link">Experience</a></li>
                     <li><a href="#education" class="nav-link">Education</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#portfolio" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="intro" >
-            <h1>Hi, I'm <span>Sujan</span> <br></h1>
-               <p>  passionate web developer with 1 year of experience,<br>
-                with a year of hands-on experience at Artsy Technologies,<br>
-                 I specialize in developing dynamic web applications and delivering top-notch IT services.</p>
-              <a href="https://drive.google.com/file/d/1Qe89fPDRwILYtY57qvAkuOZCDsam23kM/view?usp=drive_link"><i class="bx bxl-Download"><button>Dowload resume</button></i> </a>
-              <i class="fas fa-github" style="font-size:48px;color:red;"></i>
-            <div class="img-profile">
-            <img src="Screenshot_2024-07-11_174056-removebg-preview.png" alt="img" height="100%" width="90%"> </div>
-          
-           <div class="pic">
-        <img src="istockphoto-1088909778-1024x1024-removebg-preview.png" alt="profile" height="330px"></div>
+        <section class="intro">
+            <div class="image-container">
+                <div class="pic">
+                    <img src="istockphoto-1088909778-1024x1024-removebg-preview.png" alt="profile">
+                </div>
+            </div>
+            <div class="intro-content">
+                <h1>Hi, I'm <span>Sujan</span></h1>
+                <p>passionate web developer with 1 year of experience,
+                    with a year of hands-on experience at Artsy Technologies,
+                    I specialize in developing dynamic web applications and delivering top-notch IT services.</p>
+                <a href="https://drive.google.com/file/d/1Qe89fPDRwILYtY57qvAkuOZCDsam23kM/view?usp=drive_link">
+                    <button>
+                        <i class="bx bxl-download"></i>Download resume
+                    </button>
+                </a>
+            </div>
         </section>
     </div>
     <div class="page" id="work-experience">
         <h2>Work Experience</h2>
         <div class="underline"></div>
-        <ul>
-            <div class="sec1"><li><strong><span>Junior Web Developer at ABC Tech</span></strong> (2023 - Present)
-                <p>Developed and maintained multiple client websites, ensuring optimal performance and responsiveness. <br>
-                    Collaborated with designerment new features and enhance user experience.</p>
-                    
-                    <p>Lorem ipsum dolor sit amet cam voluptatibus repellendus quidem fuga voluptatum, magnam dicta voluptas neque cumque, dolorem tempore.
-                        <br>
-                        <p>Lorem ipsum, dolor sit amet cutem asperiores quae deleniti in, possimus corporis magni temporibus nihil eligendi debitis placeat deserunt dolorum assumenda ipsam nulla!</p>
-                    </p>
-            </li></div>
-           <div class="sec2"> <li><strong><span>Intern at XYZ Solutions</span></strong> (2022 - 2023)
-                <p>Assisted in the development of internal tools and client projects. <br>
-                     Gained hand back-end development using HTML, CSS, JavaScript, and Python. </p>
-                     <p>Lorem ipsum dolor sit amet cous, minima est magnam incidunt ipsum nesciunt optio aliquam earum eaque similique labore excepturi temporibus, nam omnis.  <br><br>
-               pa, quam voluptatum totam laboriosam ex quidem ullam. Cum officiis magnam blanditiis.</p>
-            </li>
-        </ul></div>
+        <div class="container card-container">
+            <div class="card">
+                <h3>System-Z Software Engineering</h3>
+                <p class="duration">November 2024 - Present</p>
+                <p>• Worked on backend implementation for the Carelon Engage app and assisted in developing internal functionality using HTML, CSS, JavaScript, SQL and Django REST Framework</p>
+            </div>
+            <div class="card">
+                <h3>Artsy Technologies | Full-stack Developer</h3>
+                <p class="duration">March 2024 – September 2024 (Offline)</p>
+                <p>• Full-stack development for High School website, delivering dynamic, user-friendly solutions for client needs using Java and web technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Internops | Intern | Python</h3>
+                <p class="duration">July 2023 – September 2023 (Online)</p>
+                <p>• Hands-on project experience in developing an Employee Management System, enhancing database management, implementing user authentication, and working with Python and web technologies.</p>
+            </div>
+            <div class="card">
+                <h3>Intern at Teachnook</h3>
+                <p class="duration">March 2023 – April 2023 (online)</p>
+                <p>• Developed a dynamic weather forecast web application. The project involved fetching real-time weather data from a public API and displaying it in a user-friendly interface.</p>
+            </div>
+        </div>
     </div>
     <br>
     <br>
@@ -68,20 +80,26 @@
     <div class="page" id="education">
         <h2>Education</h2>
         <div class="underline"></div>
-        <ul>
-            <div class="sec1"><li>
-                <strong><span>Bachelor of Science in Computer Science</span></strong> CMR University (2019 - 2023)
-                <p>Graduated with honors. Relevant coursework: Web Development, Data Structures, <br>
-                    Algorithms, Database Systems, and Software Engineering.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cupiditate saepe fugiat impedit voluptatibus, minima est magnam incidunt ipsum nesciunt optio aliquam earum eaque similique labore excepturi temporibus, nam omnis.  <br><br>
-                        
-            </li></div>
-            <div class="sec2"> <li><strong><span>High School Diploma</span></strong>  ABC High School (2017 - 2019)
-                <p>Graduated with a focus on science and mathematics. Active member of the coding club.</p>
-                <p>  Architecto quasi officia commodis magnam blanditiis. lore</p>
-            </p>
-            </li>
-        </ul>
+        <div class="container card-container">
+            <div class="card">
+                <h3>KALAPATARU INSTITUTE OF TECHNOLOGY</h3>
+                <p class="duration">2020 - 2024</p>
+                <p>Computer Science</p>
+                <p>CGPA: 7.5</p>
+            </div>
+            <div class="card">
+                <h3>S.G.V.P College, Kalaburgi</h3>
+                <p class="duration">2018 - 2020</p>
+                <p>Pre-University</p>
+                <p>Percentage: 60%</p>
+            </div>
+            <div class="card">
+                <h3>S M JAIN School, Shahpur</h3>
+                <p class="duration">2018</p>
+                <p>High School</p>
+                <p>Percentage: 85%</p>
+            </div>
+        </div>
     </div>
     </div>
     <br>
@@ -92,28 +110,24 @@
         <h2>My Services</h2>
         <div class="underline"></div>
        
-        <ul>
-            <div class="sec1">
-            <li><strong><span>Web Development</span></strong>
+        <div class="content-grid">
+            <div class="content-card">
+                <h3>Web Development</h3>
                 <p>Creating dynamic and responsive websites using the latest web technologies.</p>
-                <p>Lorem ipsum dolor situr advoluptatibus, minima estlabore excepturi temporibus, nam omnis.  </p>   
-          
-                <li><strong></span>Front-End Development</span></strong>
+            </div>
+            <div class="content-card">
+                <h3>Front-End Development</h3>
                 <p>Building user-friendly interfaces with HTML, CSS, and JavaScript.</p>
-               <p> Architecto quasi officia commodi inm blanditiis.</p>
-
-            </li>  </div>  <div class="sec2">
-            <li><strong></span>Back-End Development</span></strong>
+            </div>
+            <div class="content-card">
+                <h3>Back-End Development</h3>
                 <p>Developing robust server-side logic and database management systems.</p>
-               <p> Architecto quasi officia commodi incidunt doaboriosam ex quidem ullam. Cum officiis magnam blanditiis.</p>
-
-            </li>
-            <li><strong></span>Consulting</span></strong>
+            </div>
+            <div class="content-card">
+                <h3>Consulting</h3>
                 <p>Providing expert advice on web development projects and best practices.</p>
-                <p>  Architecto quasi offi expedita ad odio culpa, quam voluptatum totam laboriosam ex quidem ullam. Cum officiis magnam blanditiis.</p>
-
-            </li>
-        </ul></div>
+            </div>
+        </div>
     </div>
     <br>
     <br>
@@ -159,33 +173,28 @@
     <div class="page" id="portfolio">
         <h2>Latest Projects</h2>
         <div class="underline"></div>
-        <ul>
-            <div class="sec3">
-            <li><strong>EMPLOYEE MANAGEMNET SYSTEM</strong>
-                <p>A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quia, nemo vero perspiciatis suscipit deserunt similique. <br> Ducimus eaque, doloribus consequatur molestiae distinctio tenetur voluptatem ipsam quibusdam voluptatum repellendus nobis quisquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis omnis cupiditate iusto dignissimos quisquam aut <br> veniam soluta sed modi pariatur, nam odit amet cumque rem odio accusamus consequuntur aspernatur?</p>
-            </li></div> 
-             <div class="sec4">
-            <li><strong>JOB PORTAL</strong>
-                <p>A dynamic web application for managing tasks and to-do lists using React.js and Node.js.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quia, nemo vero perspiciatis suscipit deserunt similique. <br> Ducimus eaque, doloribus consequatur molestiae distinctio tenetur voluptatem ipsam quibusdam voluptatum repellendus nobis quisquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis omnis cupiditate iusto dignissimos quisquam aut <br> veniam soluta sed modi pariatur, nam odit amet cumque rem odio accusamus consequuntur aspernatur?</p>
-             </li></div> 
-               <div class="sec3">
-            <li><strong>ERP SYSTEM FOR SCHOOL</strong>
-                <p>A personal blog platform with user authentication and CRUD functionality, developed using Python and Flask.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quia, nemo vero perspiciatis suscipit deserunt similique. <br> Ducimus eaque, doloribus consequatur molestiae distinctio tenetur voluptatem ipsam quibusdam voluptatum repellendus nobis quisquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis omnis cupiditate iusto dignissimos quisquam aut <br> veniam soluta sed modi pariatur, nam odit amet cumque rem odio accusamus consequuntur aspernatur?</p>
-            </li> </div> 
-                  <div class="sec4">
-                <li><strong>Personal Blog</strong>
-                    <p>A personal blog platform with user authentication and CRUD functionality, developed using Python and Flask.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quia, nemo vero perspiciatis suscipit deserunt similique. <br> Ducimus eaque, doloribus consequatur molestiae distinctio tenetur voluptatem ipsam quibusdam voluptatum repellendus nobis quisquam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil debitis omnis cupiditate iusto dignissimos quisquam aut <br> veniam soluta sed modi pariatur, nam odit amet cumque rem odio accusamus consequuntur aspernatur?</p>
-                </li>  
+        <div class="container card-container">
+            <div class="card">
+                <h3>CARELON ENGAGE</h3>
+                <p>HTML | CSS | JAVASCRIPT | BOOTSTRAP | SQL | Django | DRF</p>
+                <p>Worked on the backend implementation and UI enhancements for Carelon Engage, ensuring seamless data management, responsive design, and efficient performance.</p>
             </div>
-        </ul>
+            <div class="card">
+                <h3>ROAD LINE DETECTION</h3>
+                <p>Python | OpenCV | NumPy</p>
+                <p>Developed a computer vision-based road lane detection system using OpenCV and NumPy. Implemented Canny edge detection, Hough Transform, and region-of-interest masking for accurate lane detection. Optimized line filtering and smoothing techniques for improved robustness in varying lighting and road conditions.</p>
+            </div>
+            <div class="card">
+                <h3>JOB PORTAL</h3>
+                <p>HTML | CSS | JAVASCRIPT | Python</p>
+                <p>Developed advanced search features, secure authentication, and interactive job posting functionalities, enhancing the overall user experience for both job seekers and employers.</p>
+            </div>
+            <div class="card">
+                <h3>EMPLOYEE MANAGEMENT SYSTEM</h3>
+                <p>PYTHON | SQL</p>
+                <p>Developed an Employee Management System using Python to efficiently handle CRUD operations for employee records. Implemented secure user authentication and role-based access control.</p>
+            </div>
+        </div>
     </div>
     <br>
     <br>
@@ -205,6 +214,20 @@
    
     </div>
     
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Sujan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/sujan110/" class="bx bxl-github"></a>
+                <a href="#" class="bx bxl-linkedin"></a>
+                <a href="#" class="bx bxl-twitter"></a>
+                <a href="#" class="bx bxl-instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cursor-glow"></div>
 
     <script src="javascript.js"></script>
 </body>
